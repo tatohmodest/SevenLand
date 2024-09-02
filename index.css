@@ -184,7 +184,7 @@ h1 span{
 }
 
 .hero button {
-    width: 100%;
+    width: 50%;
         padding: 12px;
         background-image:linear-gradient(45deg, #1a1717 50%, #f79623 50%);
         background-size: 250% 100%;
@@ -195,6 +195,10 @@ h1 span{
         cursor: pointer;
         transition: background-position 0.5s ease-out;
         font-weight: 600;
+
+}
+.hero button:hover{
+    background-position: 0 0;
 
 }
 
@@ -559,7 +563,7 @@ strong{
 /* Media Queries */
 @media screen and (max-width: 1200px) {
     .hero h1 {
-        font-size: 2rem;
+        font-size: calc(10px + 2rem);
     }
 }
 
@@ -708,6 +712,9 @@ strong{
      .hero h1 {
         font-size: calc(5px - 1.4em);
     }
+     .hero button{
+        width: 100%;
+     }
 
     .why-div, .area-div {
         grid-template-columns: 1fr;
