@@ -55,10 +55,28 @@ document.addEventListener('DOMContentLoaded', function(){
         sidebar.style.display = "none";
    });
 
+//    const words = ['in-demand', 'valuable', 'sought-after', 'essential', 'cutting-edge'];
+//   let currentIndex = 0;
+//   const container = document.querySelector('.changing-part');
 
-  
-  
+//   function changeWord() {
+//     const currentWord = container.querySelector('.word');
+//     currentWord.classList.add('slide-up');
 
+//     setTimeout(() => {
+//       currentIndex = (currentIndex + 1) % words.length;
+//       const newWord = document.createElement('div');
+//       newWord.className = 'word slide-down';
+//       newWord.textContent = words[currentIndex];
+//       container.appendChild(newWord);
 
+//       setTimeout(() => {
+//         currentWord.remove();
+//         newWord.classList.remove('slide-down');
+//       }, 50);
+//     }, 500);
+//   }
+
+//   setInterval(changeWord, 2000);
 
 })

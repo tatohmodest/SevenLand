@@ -93,6 +93,7 @@ header button{
     background-color: #f79623;
     padding: 7px;
     border:none;
+    width: 100px;
     border-radius: 8px;
     font-weight: bold;
     color: white;
@@ -110,6 +111,7 @@ header button{
    flex-direction: column;
    justify-content: center;
     border-radius: 7px;
+    object-fit: scale-down;
     align-items: center;
     border:5px #eff5f6 solid;
     background-color: white;
@@ -167,7 +169,7 @@ header button{
 }
 
 .hero h1{
-    font-size: 54px;
+    font-size:54px;
     font-weight: 900;
     color:white;
 
@@ -178,8 +180,8 @@ h4{
     font-weight: 200;
 }
 h1 span{
-    color:#f79623;
-    background-color: #f8d7b0;
+    color:#efb774;
+    /* background-color: #f8d7b0; */
     padding: 2px;
 }
 
@@ -233,7 +235,7 @@ h1 span{
     background-color: white;
     border-radius: 5px;
     box-shadow: 1px 4px 2px 1px rgb(228, 223, 223);
-   border-bottom: 4px solid #52898b;
+   border-bottom: 4px solid #f79623;
 
     
 }
@@ -250,6 +252,9 @@ h1 span{
    grid-template-columns: repeat(2,minmax(0,1fr));
 }
 
+.why article .fa-solid{
+    color: #f79623;
+}
 .cta #img{
     height:400px;
     width: 100%;
@@ -392,7 +397,8 @@ button:hover{
     background-color: white;
 }
 .testimonila div{
-  padding: 10px;
+  padding: 20px;
+
   box-shadow: 2px 1px 3px 1px rgb(226, 220, 220);
 
 }
@@ -562,9 +568,9 @@ strong{
 
 /* Media Queries */
 @media screen and (max-width: 1200px) {
-    .hero h1 {
+    /* .hero h1 {
         font-size: calc(10px + 2rem);
-    }
+    } */
 }
 
 @media screen and (max-width: 992px) {
@@ -611,6 +617,10 @@ strong{
     
    .hero div:first-child{
     grid-row: 2 / 4;
+   }
+   .trust{
+    scale:0.8;
+    left: 0;
    }
  .sidebars{
     display: none;
@@ -739,3 +749,29 @@ strong{
         flex-basis: 100%;
     }
 }
+.changing-part {
+    display: inline-block;
+    position: relative;
+    width: 120px;
+    height: 36px;
+    overflow: hidden;
+    vertical-align: bottom;
+  }
+  .word {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform-origin: bottom;
+    transition: transform 0.5s ease-in-out;
+  }
+  .word.slide-up {
+    transform: translateY(-100%) rotateX(90deg);
+  }
+  .word.slide-down {
+    transform: translateY(100%) rotateX(-90deg);
+  }
