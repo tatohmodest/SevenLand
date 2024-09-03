@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function(){
 
    let i = 0;
    let nextImage = '43.jpg'
-    const images = ['./images/43.jpg','/image/school.jpg','./images/63.jpg','./images/61.jpg','./images/64.jpg','./images/P87.jpg','./images/P86.jpg']
+    const images = ['./images/43.jpg','/images/school.jpg','./images/63.jpg','./images/61.jpg','./images/64.jpg','./images/P87.jpg','./images/P86.jpg']
    
     function Slide(){
            console.log("running")
